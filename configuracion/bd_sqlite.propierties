@@ -1,0 +1,5 @@
+DRIVER=jdbc:sqlite:
+URL=BaseDatos/ordenadores.db
+HOST=
+USER=
+PASSWORD=

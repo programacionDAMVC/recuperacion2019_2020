@@ -1,0 +1,5 @@
+DRIVER=jdbc:mysql:
+URL=BaseDatos/ordenadores.db
+HOST=//localhost/
+USER=manolo
+PASSWORD= 123456
