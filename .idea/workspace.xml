@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="18b6d379-95dd-4159-8273-cb37d14e92d8" name="Default Changelist" comment="" />
+    <list default="true" id="18b6d379-95dd-4159-8273-cb37d14e92d8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BaseDatos/ordenadores.db" beforeDir="false" afterPath="$PROJECT_DIR$/BaseDatos/ordenadores.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuracion/bd_mysql.propierties" beforeDir="false" afterPath="$PROJECT_DIR$/configuracion/bd_mysql.propierties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modelo/Auxiliar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/Auxiliar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modelo/InterfazPortatilDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/InterfazPortatilDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modelo/Portatil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/Portatil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modelo/PortatilDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/PortatilDAO.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +23,12 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ci7ob8s8whUoBoBilftlQLQjTT" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/JAR/sqlite-jdbc-3.30.1.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -95,5 +106,18 @@
       <updated>1590999735661</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

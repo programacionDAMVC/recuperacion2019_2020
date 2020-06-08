@@ -1,5 +1,7 @@
 package modelo;
 
+import excepciones.NoPortatilAulaException;
+
 public class Portatil {
     /*id INTEGER PRIMARY KEY AUTOINCREMENT,
 	ram INTEGER NOT NULL,
@@ -10,23 +12,29 @@ public class Portatil {
     private int ssd;
     private int pantalla;
 
-    public Portatil(int id, int ram, int ssd, int pantallada) {
+    public Portatil(int id, int ram, int ssd, int pantallada) throws NoPortatilAulaException {
+        if (!Auxiliar.validarOrdenador(id, ram, ssd, pantalla))
+            throw new NoPortatilAulaException();
         this.id = id;
         this.ram = ram;
         this.ssd = ssd;
         this.pantalla = pantallada;
     }
-    public Portatil( int ram, int ssd, int pantallada) {
+    public Portatil( int ram, int ssd, int pantalla) throws NoPortatilAulaException {
+        if (!Auxiliar.validarOrdenador(100, ram, ssd, pantalla))
+            throw new NoPortatilAulaException();
         this.ram = ram;
         this.ssd = ssd;
-        this.pantalla = pantallada;
+        this.pantalla = pantalla;
     }
 
     public int getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(int id) throws NoPortatilAulaException {
+        if (!Auxiliar.validarID(id))
+            throw new NoPortatilAulaException();
         this.id = id;
     }
 
@@ -34,7 +42,9 @@ public class Portatil {
         return ram;
     }
 
-    public void setRam(int ram) {
+    public void setRam(int ram) throws NoPortatilAulaException {
+        if (!Auxiliar.validarRAM(ram))
+            throw new NoPortatilAulaException();
         this.ram = ram;
     }
 
@@ -42,7 +52,9 @@ public class Portatil {
         return ssd;
     }
 
-    public void setSsd(int ssd) {
+    public void setSsd(int ssd) throws NoPortatilAulaException {
+        if (!Auxiliar.validarSSD(ssd))
+            throw new NoPortatilAulaException();
         this.ssd = ssd;
     }
 
@@ -50,7 +62,9 @@ public class Portatil {
         return pantalla;
     }
 
-    public void setPantalla(int pantalla) {
+    public void setPantalla(int pantalla) throws NoPortatilAulaException {
+        if (!Auxiliar.validarPulgadas(pantalla))
+            throw new NoPortatilAulaException();
         this.pantalla = pantalla;
     }
 
