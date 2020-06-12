@@ -76,10 +76,14 @@ public class PortatilDAO implements InterfazPortatilDAO{
         try (Statement sentecia = conexion.createStatement();
              ResultSet resultado = sentecia.executeQuery(sql)) {
             while (resultado.next()){
-                listaPortatiles.add(new Portatil(resultado.getInt("id"), resultado.getInt("ram"),
-                        resultado.getInt("ssd"), resultado.getInt("pantalla")));
+                try {
+                    listaPortatiles.add(new Portatil(resultado.getInt(1), resultado.getInt(2),
+                            resultado.getInt(3), resultado.getInt(4)));
+                } catch (NoPortatilAulaException e) {
+                    System.out.println(e.getMessage());
+                }
             }
-        } catch (SQLException | NoPortatilAulaException e) {
+        } catch (SQLException  e) {
             e.printStackTrace();
         }
         return listaPortatiles;

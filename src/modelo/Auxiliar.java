@@ -87,13 +87,15 @@ public class Auxiliar {
     }
     public static boolean validarOrdenador (int id, int ram, int ssd, int pantalla) {
         return  validarID(id) && validarRAM(ram) && validarSSD(ssd) && validarPulgadas(pantalla);
+        //return true;
     }
 
 
     public static void main(String[] args) {
-      //  volcarBDaFichero(new PortatilDAO());
         PortatilDAO dao = new PortatilDAO();
-        leerDatosFicheroVolcarABD("FICHEROS/BD_2020-06-08T11:06:02.913123.csv", dao);
+       // leerDatosFicheroVolcarABD("FICHEROS/BD_2020-06-08T11:06:02.913123.csv", dao);
+        volcarBDaFichero(new PortatilDAO());
+
         Conexion.cierreConexion();
     }
 }

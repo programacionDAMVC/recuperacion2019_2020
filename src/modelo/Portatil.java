@@ -12,13 +12,13 @@ public class Portatil {
     private int ssd;
     private int pantalla;
 
-    public Portatil(int id, int ram, int ssd, int pantallada) throws NoPortatilAulaException {
+    public Portatil(int id, int ram, int ssd, int pantalla) throws NoPortatilAulaException {
         if (!Auxiliar.validarOrdenador(id, ram, ssd, pantalla))
             throw new NoPortatilAulaException();
         this.id = id;
         this.ram = ram;
         this.ssd = ssd;
-        this.pantalla = pantallada;
+        this.pantalla = pantalla;
     }
     public Portatil( int ram, int ssd, int pantalla) throws NoPortatilAulaException {
         if (!Auxiliar.validarOrdenador(100, ram, ssd, pantalla))
